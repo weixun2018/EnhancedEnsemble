@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-csv_file_1 = 'result/UCI_python/f1_mean_std_PRUS_8.csv'
-csv_file_2 = 'result/UCI_local/f1_mean_std_PRUS_4.csv'
+csv_file_1 = 'result/UCI_python/f1_mean_std_DWUS_8.csv'
+csv_file_2 = 'result/UCI_local/f1_mean_std_DWUS_4.csv'
 
 
 df_1 = pd.read_csv(csv_file_1, index_col='Unnamed: 0')
@@ -25,4 +25,4 @@ df['Average'] = df_.mean(axis=1)
 
 print(df)
 
-df.to_csv('result/f1_mean_std_PRUS_final_12.csv')
+df.to_csv('result/f1_mean_std_DWUS_final_12.csv')

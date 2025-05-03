@@ -4,9 +4,9 @@ import matplotlib
 import numpy as np
 import pandas as pd
                
-csv_file_list = ['result/auc_mean_std_PRUS_final_12.csv',
-                 'result/gmean_mean_std_PRUS_final_12.csv',
-                 'result/f1_mean_std_PRUS_final_12.csv',
+csv_file_list = ['result/auc_mean_std_DWUS_final_12.csv',
+                 'result/gmean_mean_std_DWUS_final_12.csv',
+                 'result/f1_mean_std_DWUS_final_12.csv',
                 ]
 title_list = ['(a) AUC of models on 12 UCI datasets',
               '(b) G-mean of models on 12 UCI datasets',

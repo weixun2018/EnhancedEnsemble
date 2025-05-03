@@ -9,8 +9,10 @@ An enhanced ensemble framework for imbalance learning.
 - finally trains base classifiers on multiple subsets and obtains the ensemble model.
 
 ![Example of DWUS](./figures/dwus-examples.png)
+<!-- Example of DWUS -->
 
 ![Overview of EnhanceEnsemble](./figures/EnhancedEnsemble.png)
+<!-- Overview of EnhanceEnsemble -->
 
 ## Datasets
 
@@ -37,16 +39,19 @@ An enhanced ensemble framework for imbalance learning.
 ## Results
 We compare our method `EnhancedEnsemble` with other 8 methods in terms of AUC, G-mean and F-measure on 12 UCI datasets.
 
-![Average ranks of all methods and critical difference diagram for the Nemenyi test](./figures/friedman-test.png)
+![Average ranks of all methods and critical difference diagram for the Nemenyi test.](./figures/friedman-test.png)
+<!-- Average ranks of all methods and critical difference diagram for the Nemenyi test. -->
 
 ## Ablation Study
 - To quantify the individual contributions of DWUS and RFS in the `EnhancedEnsemble` framework, we design a controlled ablation study.
 
 ![Comparison of Model Performance with and without DWUS and RFS.](./figures/DWUS_and_RFS.png)
+<!-- Comparison of Model Performance with and without DWUS and RFS. -->
 
 - Besides, we discover the sensitivity of α value across 12 datasets to reveal its importance for `EnhancedEnsemble`
 
 ![Sensitivity of Feature Sampling Rate(α) to Model Performance.](./figures/alpha-sensitivity.png)
+<!-- Sensitivity of Feature Sampling Rate(α) to Model Performance. -->
 
 ## How to use
 ### Dependencies
@@ -59,15 +64,15 @@ We compare our method `EnhancedEnsemble` with other 8 methods in terms of AUC, G
 
 ### Scripts
 #### Core scripts
-- main.py: main program. For every dataset, we perform ten times of five-fold cross validation
-- dataloader.py: load UCI data, directly imported by python or downloaded locally
-- model.py: define all the compared methods(9 methods)
-- sampler.py: define the sampling strategy of datasets
-- dwus.py: distance weighted under-sampling method
+- `main.py`: main program. For every dataset, we perform ten times of five-fold cross validation
+- `dataloader.py`: load UCI data, directly imported by python or downloaded locally
+- `model.py`: define all the compared methods(9 methods)
+- `sampler.py`: define the sampling strategy of datasets
+- `dwus.py`: distance weighted under-sampling method
 
 #### Auxiliary scripts
-- process_result.py: post process experiments results that combines two kinds of datasets, find the best α value for `EnhancedEnsemble` and calculate the average values
-- plot_dwus_example.py: plot the example of DWUS(by `sklearn.datasets.make_classification`)
-- plot_result_figure: plot the result of ablation study
-- friedman_test.py: generate the result of Friedman test and Nemenyi test
-- paired_t_test.py: generate the result of paired t-test
+- `process_result.py`: post process experiments results that combines two kinds of datasets, find the best α value for `EnhancedEnsemble` and calculate the average values
+- `plot_dwus_example.py`: plot the example of DWUS(by `sklearn.datasets.make_classification`)
+- `plot_result_figure`: plot the result of ablation study
+- `friedman_test.py`: generate the result of Friedman test and Nemenyi test
+- `paired_t_test.py`: generate the result of paired t-test
