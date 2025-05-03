@@ -8,11 +8,11 @@ An enhanced ensemble framework for imbalance learning.
 - then weighted undersamples majority instances to create a balanced training subset; 
 - finally trains base classifiers on multiple subsets and obtains the ensemble model.
 
+Example of DWUS:
 ![Example of DWUS](./figures/dwus-examples.png)
-<!-- Example of DWUS -->
 
+Overview of EnhanceEnsemble:
 ![Overview of EnhanceEnsemble](./figures/EnhancedEnsemble.png)
-<!-- Overview of EnhanceEnsemble -->
 
 ## Datasets
 
@@ -40,18 +40,16 @@ An enhanced ensemble framework for imbalance learning.
 We compare our method `EnhancedEnsemble` with other 8 methods in terms of AUC, G-mean and F-measure on 12 UCI datasets.
 
 ![Average ranks of all methods and critical difference diagram for the Nemenyi test.](./figures/friedman-test.png)
-<!-- Average ranks of all methods and critical difference diagram for the Nemenyi test. -->
 
 ## Ablation Study
 - To quantify the individual contributions of DWUS and RFS in the `EnhancedEnsemble` framework, we design a controlled ablation study.
 
 ![Comparison of Model Performance with and without DWUS and RFS.](./figures/DWUS_and_RFS.png)
-<!-- Comparison of Model Performance with and without DWUS and RFS. -->
 
 - Besides, we discover the sensitivity of α value across 12 datasets to reveal its importance for `EnhancedEnsemble`
 
 ![Sensitivity of Feature Sampling Rate(α) to Model Performance.](./figures/alpha-sensitivity.png)
-<!-- Sensitivity of Feature Sampling Rate(α) to Model Performance. -->
+
 
 ## How to use
 ### Dependencies
