@@ -1,5 +1,5 @@
 from imblearn.under_sampling import RandomUnderSampler, NearMiss
-from Sample.PRUS import PRUS
+# from Sample.PRUS import PRUS
 from imblearn.over_sampling import SMOTE, RandomOverSampler
 
 sampler_dict = {
